@@ -5,8 +5,12 @@ import CssBaseline from "@mui/material/CssBaseline"
 import { CacheProvider, EmotionCache } from "@emotion/react"
 import theme from "~/mui/theme"
 import createEmotionCache from "~/mui/createEmotionCache"
-import { Authenticator } from "@aws-amplify/ui-react"
+import awsconfig from "../src/aws-exports"
 import "@aws-amplify/ui-react/styles.css"
+import { CustomAuthenticator } from "@tamura/amplify-common-lib/components/CustomAuthenticator"
+import { Amplify } from "aws-amplify"
+
+Amplify.configure(awsconfig)
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()
@@ -28,9 +32,9 @@ const MyApp = ({
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Authenticator>
+        <CustomAuthenticator>
           <Component {...pageProps} />
-        </Authenticator>
+        </CustomAuthenticator>
       </ThemeProvider>
     </CacheProvider>
   )
