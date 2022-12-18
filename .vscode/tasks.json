@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "type": "npm",
+            "script": "build",
+            "path": "__lib/",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build - __lib",
+            "detail": "rm -rf ./dist && tsc && tsc-alias -p tsconfig.json && cp ./package.json ./dist/"
+        }
+    ]
+}

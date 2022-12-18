@@ -3,12 +3,12 @@ import { AppProps } from "next/app"
 import { ThemeProvider } from "@mui/material/styles"
 import CssBaseline from "@mui/material/CssBaseline"
 import { CacheProvider, EmotionCache } from "@emotion/react"
-import theme from "~/mui/theme"
-import createEmotionCache from "~/mui/createEmotionCache"
 import awsconfig from "../src/aws-exports"
 import "@aws-amplify/ui-react/styles.css"
 import { CustomAuthenticator } from "@tamura/amplify-common-lib/components/CustomAuthenticator"
 import { Amplify } from "aws-amplify"
+import createEmotionCache from "mui/createEmotionCache"
+import theme from "mui/theme"
 
 Amplify.configure(awsconfig)
 

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -20,11 +20,11 @@
     "jsxImportSource": "@emotion/react",
     "incremental": true,
     "baseUrl": "./src",
-    "paths": {
-      "~/*": [
-        "./*"
-      ],
-    }
+    // "paths": {
+    //   "~/*": [
+    //     "./*"
+    //   ],
+    // }
   },
   "include": [
     "next-env.d.ts",
@@ -32,6 +32,6 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
   ]
 }

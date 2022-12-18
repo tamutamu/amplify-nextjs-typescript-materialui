@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "lib": ["dom", "esnext"],
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+    //   "outDir": "./src",
+      "baseUrl": "src",
+    //   "rootDir": "src",
+      "paths": {
+        "*": ["*"]
+      }
+    },
+  "include": [
+    "src/**/*.ts",
+    "test/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+  }

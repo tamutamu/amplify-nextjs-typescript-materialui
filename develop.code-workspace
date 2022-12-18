@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "__lib"
+	},
+	{
+		"path": "amplify/backend/function/tsfunc1/lib"
+	}
+],
+  "settings": {}
+}

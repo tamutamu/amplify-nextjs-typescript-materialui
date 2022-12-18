@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "auth": {
+      "amplifytypemuicdf9bd70": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    },
+    "api": {
+      "amplifytypemui": [
+        "Query",
+        "Mutation",
+        "Subscription"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}
